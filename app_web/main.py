@@ -11,6 +11,6 @@ def programacion_basico():
     return '<h1>Curso de Programación Básico</h1>'
 
 
-@app.route('/programacion_basico/git_webhook')
+@app.route('/programacion_basico/git_webhook', methods=['POST','GET'])
 def git_webhook():
     return 'Se recibió la información'
