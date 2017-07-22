@@ -1,10 +1,11 @@
 from flask import Flask, request
 
+
 app = Flask(__name__)
 
 @app.route('/')
 def principal():
-    return open('pagina_principal.html')
+    return open('pagina_principal.html').read()
 
 @app.route('/programacion_basico')
 def programacion_basico():
