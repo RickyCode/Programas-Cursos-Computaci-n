@@ -5,7 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def principal():
-    return open('pagina_principal.html').read()
+    with open('pagina_principal.html') as archivo:
+        pagina = archivo.read()
+    return pagina
 
 @app.route('/programacion_basico')
 def programacion_basico():
