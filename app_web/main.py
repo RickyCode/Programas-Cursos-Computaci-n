@@ -12,10 +12,10 @@ def programacion_basico():
 
 
 @app.route('/programacion_basico/git_webhook', methods=['POST'])
-def git_webhook():
+def git_webhook_post():
     recibido = request.json
     return 'Se recibió la información'
 
 @app.route('/programacion_basico/git_webhook', methods=['GET'])
-def git_webhook():
+def git_webhook_get():
     return 'Esta página recibe los avisos de todos los cambios en los repositorios de los estudiantes.'
