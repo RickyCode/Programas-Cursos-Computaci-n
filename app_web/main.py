@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def principal():
-    return '<h1>CURSOS DE COMPUTACION</h1>'
+    return open('pagina_principal.html')
 
 @app.route('/programacion_basico')
 def programacion_basico():
